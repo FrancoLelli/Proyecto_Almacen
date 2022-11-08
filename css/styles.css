@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+html {
+    height: 100%; 
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6em; /* Espacio entre texto y texto */
+    color: #333;
+    display: flex;
+    height: 100%;
+    flex-direction: column; 
+}
+
+.body{
+    background-image: url("../img/img_almacen1.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+}
+
+.mainSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
+.sectionHome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #93acac;
+    width: 40%;
+    border-radius: 5px;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #2a2a2a;
+    color: whitesmoke;
+    padding: 2rem 0;
+    width: 100%; 
+}
+
+.header a {
+    color: whitesmoke;
+    text-decoration: none; 
+}
+
+.header a:hover {
+    color: whitesmoke;
+    text-decoration: none; 
+}
+  
+
+.divGeneral{
+    width: 85%;
+    margin: 0 auto; 
+}
+  
+.header {
+    background-color: #426262;
+    color: whitesmoke;
+    padding: 2rem 0;
+    width: 100%; 
+}
+
+.logo {
+    letter-spacing: 15px;
+    font-size: 1.3em; 
+}
+
+.logo2{
+    margin: 0px 5px;
+}
+
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.barra {
+    display: none; 
+}
+
+.navegation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+}
+
+.navegation ul li {
+    display: inline-block; 
+}
+.navegation ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear; 
+}
+
+.navegation ul li a:hover {
+    background: #606060;
+    border-radius: 5px;
+    color: whitesmoke; 
+    transition: all 0.4s linear; 
+}
+
+
+.tituloPagina{
+    text-align: center;
+    padding: 10px 0px;
+    margin: 20px 0px;
+}
+
+.tituloForm{
+    margin-top: 5px;
+    text-align: center;
+}
+
+.footer{
+    background: #426262;
+    text-align: center;
+    margin-top: auto; 
+}
+
+.footer p{
+    padding: 30px 0px;
+    color: whitesmoke;
+}
+
+/* LOGIN */
+
+.login{
+    background: rgb(66,98,98);
+    background: linear-gradient(90deg, rgba(66,98,98,1) 33%, rgba(96,96,96,1) 100%);    
+    color: white;
+    height: 100%;
+}
+
+.crearCuenta a{
+    text-decoration: none;
+    color: #2a2a2a;
+    transition: 1s;
+}
+
+.crearCuenta a:hover{
+    color: whitesmoke;
+    transition: 1s;
+}
+
+.errorLogin{
+    
+    margin: 10px 0px;
+}
+
+.mainGraficoPadre{
+    width: 600px;
+    margin: 20px;
+    background-color: azure;
+}
+
+.graficos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap ;
+}
+
+.mainGrafico{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.estadisticas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+/* PROVEEDORES */
+.panelProv{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    margin: 15px;
+    flex-direction: row;
+}
+
+.form{
+    border: 4px solid #426262;
+    width: 500px;
+    display: block;
+}
+
+label{
+    width: 108px;
+    text-align: start;
+}
+
+.divForm{
+    text-align: center;
+    margin: 30px 0px;
+}
+
+select{
+    width: 186px;
+}
+
+.main2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.form-container input, textarea{ 
+    padding: 5px;
+    font-size: 15px;
+    margin: 10px 0px;
+}
+
+.form-container label{
+    color: #333;
+    font-size: 20px;
+}
+
+.form-container button{
+    margin: 10px 0px;
+}
+
+.confirmarVenta{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 200px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1193px) {
+    .panelProv{
+        flex-direction: column;
+        align-items: center;
+    }
+    .tablaProv{
+        margin-top: 20px;
+    }
+    .navegation {
+        width: 100%;
+        margin-top: 1rem; 
+    }
+    .barra {
+        display: block;
+        cursor: pointer; 
+    }
+    .navegation ul {
+        display: none;
+        margin: 0;
+        padding: 0;
+        list-style: none; 
+    }
+    .navegation ul.show {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    .navegation ul li {
+        display: block; 
+    }
+    .navegation ul li a {
+        display: block;
+        padding: 0.5rem 1rem;
+        transition: all 0.4s linear; 
+    }
+    .navegation ul li a:hover {
+        background: #606060;
+        border-radius: 5px; 
+    }
+    .confirmarVenta{
+        margin: 10px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tituloPagina{
+        font-size: 20px;
+    }
+    
+}
+
+
+@media screen and (max-width: 600px) {
+    .mainGraficoPadre{
+        width: 400px;
+    }
+
+    .body{
+        background-image: url("../img/img_almacen2.jpg");
+    }
+
+    .sectionHome{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        color: white;
+        width: 50%; 
+        border-radius: 0; 
+        flex-direction: column;
+    }
+
+    .mainSection{
+        height: 10%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .mainGraficoPadre{
+        width: 200px;
+    }
+}
